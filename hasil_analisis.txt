@@ -1,0 +1,51 @@
+=== HASIL ANALISIS REGRESI LINEAR SEDERHANA ===
+
+Nama Kolom Dataset:
+- Berapa rata-rata waktu yang Anda habiskan untuk menggunakan media sosial per hari? 
+- Saya merasa media sosial membantu saya meningkatkan produktivitas akademik.
+- Platform media sosial apa yang paling sering Anda gunakan? (Boleh memilih lebih dari satu)
+- Durasi
+- Produktivitas
+
+Jumlah Data : 100
+
+===== HASIL REGRESI =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          Produktivitas   R-squared:                       0.035
+Model:                            OLS   Adj. R-squared:                  0.025
+Method:                 Least Squares   F-statistic:                     3.588
+Date:                Tue, 16 Jun 2026   Prob (F-statistic):             0.0612
+Time:                        18:51:02   Log-Likelihood:                -114.04
+No. Observations:                 100   AIC:                             232.1
+Df Residuals:                      98   BIC:                             237.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          3.7555      0.303     12.413      0.000       3.155       4.356
+Durasi         0.1854      0.098      1.894      0.061      -0.009       0.380
+==============================================================================
+Omnibus:                        8.990   Durbin-Watson:                   1.984
+Prob(Omnibus):                  0.011   Jarque-Bera (JB):                9.735
+Skew:                          -0.756   Prob(JB):                      0.00769
+Kurtosis:                       2.776   Cond. No.                         13.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Persamaan Regresi
+Y = 3.756 + (0.185)X
+
+R Square : 0.035
+Adjusted R Square : 0.025
+
+Uji t
+t hitung : 1.894
+p-value : 0.06116
+
+Uji F
+F hitung : 3.588
+p-value : 0.06116
